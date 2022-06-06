@@ -9,8 +9,8 @@ function Withdraw(){
   return (
     <div className="container">
         <Card 
-        bgcolor="light"
-        txtcolor="black"
+        bgcolor="danger"
+        txtcolor="white"
         header="Withdraw"
         body={balanceMessage}
         />

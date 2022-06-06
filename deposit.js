@@ -9,8 +9,8 @@ function Deposit(){
   return (
     <div className="container">
         <Card 
-        bgcolor="light"
-        txtcolor="black"
+        bgcolor="success"
+        txtcolor="white"
         header="Deposit"
         body={balanceMessage}
         />

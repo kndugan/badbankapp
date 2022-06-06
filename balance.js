@@ -8,7 +8,7 @@ function Balance(){
   return (
     <div className="container">
         <Card 
-        bgcolor="light"
+        bgcolor="info"
         txtcolor="black"
         header="Balance"
         body={balanceMessage}

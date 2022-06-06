@@ -3,8 +3,8 @@ function AllData(){
   return (
     <div className="container">
         <Card 
-        bgcolor="light"
-        txtcolor="black"
+        bgcolor="secondary"
+        txtcolor="white"
         header="All Data"
         body={JSON.stringify(ctx)}
         />
