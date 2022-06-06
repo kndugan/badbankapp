@@ -32,28 +32,30 @@ function CreateAccount(){
   }
 
   return (
-    <Card 
-    bgcolor="light"
-    txtcolor="black"
-    header="Create Account"
-    status={status}
-    body={show ? (
-      <>
-      Name<br/>
-      <input type="input" className="form-control" id="name" placeholder="Enter Name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
-      Email Address<br/>
-      <input type="input" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
-      Password<br/>
-      <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
-      <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
-      </>
-    ) : (
-      <>
-      <h5>Success</h5>
-      <button type="submit" className="btn btn-dark" onClick={clearForm}>Add Another Account</button>
-      </>
-    )}
-    />
+    <div className="container">
+      <Card 
+      bgcolor="light"
+      txtcolor="black"
+      header="Create Account"
+      status={status}
+      body={show ? (
+        <>
+        Name<br/>
+        <input type="input" className="form-control" id="name" placeholder="Enter Name" value={name} onChange={e => setName(e.currentTarget.value)} /><br/>
+        Email Address<br/>
+        <input type="input" className="form-control" id="email" placeholder="Enter Email" value={email} onChange={e => setEmail(e.currentTarget.value)} /><br/>
+        Password<br/>
+        <input type="password" className="form-control" id="password" placeholder="Enter Password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
+        <button type="submit" className="btn btn-dark" onClick={handleCreate}>Create Account</button>
+        </>
+      ) : (
+        <>
+        <h5>Success</h5>
+        <button type="submit" className="btn btn-dark" onClick={clearForm}>Add Another Account</button>
+        </>
+      )}
+      />
+    </div>
   );
 }
 

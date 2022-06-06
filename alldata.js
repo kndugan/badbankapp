@@ -1,10 +1,14 @@
 function AllData(){
-  const ctx = React.useContext(UserContext);
+    const ctx = React.useContext(UserContext);
   return (
     <div className="container">
-    <h1>All Data<br/>
-      {JSON.stringify(ctx)}
-    </h1>
+        <Card 
+        bgcolor="light"
+        txtcolor="black"
+        header="All Data"
+        body={JSON.stringify(ctx)}
+        />
     </div>
-  );
+  )
 }
+
